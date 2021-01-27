@@ -1,0 +1,124 @@
+/* Layouts */
+.card {
+  width: 350px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  background-image: url("../images/bg-pattern-card.svg");
+  background-size: 100% 35%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 90%;
+    height: 55%;
+  }
+}
+
+.profile {
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 30%;
+  height: 50%;
+}
+
+/* Containers */
+
+.container {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.cols {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.topSection {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.bottomSection {
+  height: 50%;
+  width: 100%;
+}
+
+.bottomSection > div:first-child {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bottomSection > div:last-child {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid hsl(0, 0%, 59%);
+}
+
+.staticContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.staticContainer > p:first-child {
+  margin-bottom: -17%;
+  font-weight: 700;
+}
+
+.staticContainer > p:last-child {
+  margin-top: -17%;
+  font-weight: 400;
+  font-size: small;
+}
+
+/* Typography */
+
+.darkGray {
+  color: hsl(0, 0%, 59%);
+  margin: 0;
+  padding: 0;
+}
+
+.darkCyan {
+  color: hsl(185, 75%, 39%);
+  margin: 0;
+  padding: 0;
+}
+
+.veryDarkDesaturatedBlue {
+  color: hsl(229, 23%, 23%);
+  margin: 0;
+  padding: 0;
+}
+
+.darkGrayishBlue {
+  color: hsl(227, 10%, 46%);
+  margin: 0;
+  padding: 0;
+}
